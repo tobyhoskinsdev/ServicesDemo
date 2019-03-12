@@ -10,9 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
-            android:name=".MathService"
+            android:name=".MyBoundService"
             android:enabled="true"
             android:exported="true"></service>
+        <service
+            android:name=".MathService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".MyIntentService"
+            android:exported="false" />
 
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -1,18 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvDisplayOne"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="10dp"
+        android:textSize="24sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvDisplayTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvDisplayThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tvDisplayBound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnBindToService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIND TO SERVICE"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnUnBindFromService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNBIND FROM SERVICE"
+        android:onClick="onClick"/>
+
+</LinearLayout>
